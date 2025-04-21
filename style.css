@@ -1,22 +1,89 @@
-html{
-    background-color: black;
-}
-
-h1{
-    text-transform: capitalize;
-    font-size: 3rem;
-
-}
-.meme{
-    border: 5px solid white;
-    width: 100%;
-    height: 100%;
-}
-.poster{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 100px;
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    text-align: center;
-}
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: monospace;
+    background-color: #1d232a;
+    color: #f0a500; /* Gold accent */
+  }
+  
+  /* ===== Layout ===== */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* ===== Sidebar ===== */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: #1d232a;
+    padding: 40px 20px;
+    border-right: none;
+    color: #f0a500;
+  }
+  
+  .sidebar h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: #f0a500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .sidebar nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Content ===== */
+  .content {
+    flex-grow: 1;
+    padding: 60px;
+  }
+  
+  .content h2 {
+    font-size: 1.5em;
+    color: #f0a500;
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+  
+  .content li {
+    margin-bottom: 12px;
+  }
+  
+  .content a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #888;
+  }
